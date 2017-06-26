@@ -1,0 +1,191 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": [
+    "import",
+    "require-path-exists"
+  ],
+  "globals": {
+    "Apoc": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-implicit-coercion": [
+      "error",
+      {
+        "boolean": true,
+        "string": true,
+        "number": true
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-with": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multi-spaces": "error",
+    "one-var": [
+      "error",
+      {
+        "uninitialized": "never",
+        "initialized": "never"
+      }
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after"
+    ],
+    "space-unary-ops": [
+      "error",
+      {
+        "words": false,
+        "nonwords": false
+      }
+    ],
+    "semi-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "never"
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never",
+      {
+        "objectsInArrays": false
+      }
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "args": "after-used"
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "no-var": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": [
+          "Number",
+          "Boolean",
+          "String",
+          "Symbol",
+          "F",
+          "Deferred"
+        ]
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "dot-notation": "error",
+    "no-else-return": "error",
+    "eol-last": "error",
+    "newline-after-var": [
+      "error",
+      "always"
+    ],
+    "wrap-iife": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "space-infix-ops": "error",
+    "comma-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {}
+    ],
+    "spaced-comment": [
+      "error",
+      "always"
+    ],
+    "space-before-blocks": [
+      "error",
+      "always"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
+    "require-path-exists/exists": [
+      "error",
+      {
+        "extensions": [
+          "",
+          ".js",
+          ".json",
+          ".less",
+          ".css",
+          ".stache"
+        ]
+      }
+    ]
+  }
+}

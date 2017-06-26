@@ -1,0 +1,7 @@
+<div class="btn btn-toggle {{#if enabled}}btn-toggle__on{{else}}btn-toggle__off{{/if}}" ($click)="toggle()">
+  <div class="btn-toggle--wrapper">
+    <span class="btn-toggle--label btn-toggle--label__on" >{{labelOn}}</span>
+    <span class="btn-toggle--switch" />
+    <span class="btn-toggle--label btn-toggle--label__off" >{{labelOff}}</span>
+  </div>
+</div>

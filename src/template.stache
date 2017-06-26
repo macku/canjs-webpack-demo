@@ -1,0 +1,14 @@
+<div>
+  Hello World!
+
+
+  <btn-toggle (on-toggle)="changeValue()" />
+
+  <p>
+    {{widget}}
+  </p>
+
+  {{#widget}}
+    <span>works!</span>
+  {{/widget}}
+</div>
